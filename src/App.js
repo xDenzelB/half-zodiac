@@ -2,14 +2,14 @@ import './App.css'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
-
+import { zodiac } from './data'
 {/* import the zodiac array */}
 
 function App() {
   return (
     <div className="App">
       <Header name='Denzel' />
-      <Main />
+      <Main zodiac={zodiac} />
       <Footer year='2022' />
       {/* import and use the Header. Main, and Footer components here */}
       {/* the Header component needs a string passed in as the `name` prop */}
